@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Cart</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/price-range.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+
+<body>
+	<header id="header"><!--header-->
+		
+		
+		<div class="header-middle"><!--header-middle-->
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo pull-left">
+							<a href="index.html"><img src="images/home/logo.png" alt="" /></a>
+						</div>
+						<div class="btn-group ">
+							<button type="button" class="btn btn-default dropdown-toggle " data-toggle="dropdown">
+								UA
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li><a href="#">Eng</a></li>
+								<li><a href="#">RU</a></li>
+							</ul>
+						</div>
+						
+					</div>
+
+					<nav class="col-sm-8">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="mainmenu pull-left">
+							<ul class="nav navbar-nav collapse navbar-collapse">
+								<li><a href="index.html">Головна</a></li>
+								<li><a href="shop.html">Товари</a></li> 
+								<li><a href="reviews.html">Відгуки</a></li>
+                                    
+                                </li> 
+								
+								<li><a href="contact-us.html">Контакти</a></li>
+							</ul>
+						</div>
+						<div class="shop-menu">
+							<div class="search_box" style="float:left;">
+								<input type="text" placeholder="Search"/>
+							</div>
+							<ul class="nav navbar-nav cart" style="float: right;">
+
+								<li><a href="cart.html" class="active"><i class="fa fa-shopping-cart"></i>Кошик</a></li>
+								
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div><!--/header-middle-->
+	
+		<div class="header-bottom"><!--header-bottom-->
+			<div class="container">
+				<div class="row">
+					<div class="tab">
+						<input id="tab-one" type="checkbox" name="tabs">
+					<label class="text-center" for="tab-one"><p>З чого складаєтсья комплекс</p></label>
+					<div class="tab-complect how">
+						<div class="col-sm-7">
+							<div class="img-complect">
+								<img src="/images/home/complect.png" alt="">
+							</div>
+						</div>
+						<div class="col-sm-7">
+							<div class="img-complect">
+								<img src="/images/home/complect1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="cart_items">
+		<div class="container">
+			<div class="breadcrumbs">
+				<ol class="breadcrumb">
+				  <li><a href="#">Home</a></li>
+				  <li class="active">Кошик</li>
+				</ol>
+			</div>
+			<p style="font-size: 18px;"><red style="color: red; font-size: 18px;">*</red>Ціна у кошику орієнтовна. Для більше детального прорахунку ціни за товари звертайтесь до наших менеджерів. Форма зворотнього звязку дивіться нижче.</p>
+			<div class="table-responsive cart_info">
+				<table class="table table-condensed">
+					<thead>
+						<tr class="cart_menu">
+							<td class="image">Товари</td>
+							<td class="description">Назва</td>
+							<td class="price">Ціна</td>
+							<td class="quantity">Кількість</td>
+							<td class="total">Орієнтовна сума</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr style="background-color:#ffffe087;">
+							<td class="cart_product">
+								<a href=""><img src="images/cart/one.jpg" alt="" style="width: 50px;"></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+
+						<tr style="background-color: lightyellow">
+							<td class="cart_product">
+								<a href=""><img src="images/cart/two.jpg" alt="" style="width: 50px;"></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+						<tr style="background-color: #ffffe087">
+							<td class="cart_product">
+								<a href=""><img src="images/cart/three.jpg" alt="" style="width: 50px;"></a>
+							</td>
+							<td class="cart_description">
+								<h4><a href="">Colorblock Scuba</a></h4>
+								
+							</td>
+							<td class="cart_price">
+								<p>$59</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									<a class="cart_quantity_up" href=""> + </a>
+									<input class="cart_quantity_input" type="text" name="quantity" value="1" autocomplete="off" size="2">
+									<a class="cart_quantity_down" href=""> - </a>
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price">$59</p>
+							</td>
+							<td class="cart_delete">
+								<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+							</td>
+						</tr>
+
+						<tr style="background-color: lightyellow">
+							<td class="cart_product">
+								
+							</td>
+							<td class="cart_description">
+								
+								
+							</td>
+							<td class="cart_price">
+								<p> Разом:</p>
+							</td>
+							<td class="cart_quantity">
+								<div class="cart_quantity_button">
+									
+								</div>
+							</td>
+							<td class="cart_total">
+								<p class="cart_total_price"> $159</p>
+							</td>
+							<td class="cart_delete">
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section> <!--/#cart_items-->
+
+	<section>
+		<div class="container">
+			<div class="heading">
+				<h3>Форма зворотного зв'язку</h3>
+				<p>Залиште вашу контакту інформацію і наші Менеджери зв'яжуться з вами найближчим часом для уточнення деталей замовлення.</p>
+			</div>
+			<div class="row">  	
+			<div class="col-sm-12">
+				<div class="contact-form">
+					<h2 class="title text-center">Get In Touch</h2>
+					<div class="status alert alert-success" style="display: none"></div>
+					<form id="main-contact-form" class="contact-form row" name="contact-form" method="post">
+						<div class="form-group col-md-12">
+							<input type="text" name="Full name" class="form-control" required="required" placeholder="ПІБ">
+						</div>
+						<div class="form-group col-md-6">
+							<input type="text" name="number" class="form-control" required="required" placeholder="Ваш телефон">
+						</div>
+						<div class="form-group col-md-6">
+							<input type="email" name="email" class="form-control" required="required" placeholder="Ваш E-mail">
+						</div>
+						
+						<div class="form-group col-md-12">
+							<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Ваші побажання що до замовлення"></textarea>
+						</div>                        
+						<div class="form-group col-md-12">
+							<input type="submit" name="submit" class="btn btn-primary pull-right" value="Відправити">
+						</div>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section><!--/#do_action-->
+
+	<footer id="footer"><!--Footer-->
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-widget">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Service</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Online Help</a></li>
+								<li><a href="">Contact Us</a></li>
+								<li><a href="">Order Status</a></li>
+								<li><a href="">Change Location</a></li>
+								<li><a href="">FAQ’s</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Quock Shop</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">T-Shirt</a></li>
+								<li><a href="">Mens</a></li>
+								<li><a href="">Womens</a></li>
+								<li><a href="">Gift Cards</a></li>
+								<li><a href="">Shoes</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>Policies</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Terms of Use</a></li>
+								<li><a href="">Privecy Policy</a></li>
+								<li><a href="">Refund Policy</a></li>
+								<li><a href="">Billing System</a></li>
+								<li><a href="">Ticket System</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-2">
+						<div class="single-widget">
+							<h2>About Shopper</h2>
+							<ul class="nav nav-pills nav-stacked">
+								<li><a href="">Company Information</a></li>
+								<li><a href="">Careers</a></li>
+								<li><a href="">Store Location</a></li>
+								<li><a href="">Affillate Program</a></li>
+								<li><a href="">Copyright</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<p class="pull-left">Copyright © 2013 E-SHOPPER Inc. All rights reserved.</p>
+					<p class="pull-right">Designed by <span><a target="_blank" href="http://www.themeum.com">Themeum</a></span></p>
+				</div>
+			</div>
+		</div>
+		
+	</footer><!--/Footer-->
+	
+
+
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
